@@ -41,12 +41,19 @@
 2) LAYOUT
 
 > Final-Year-Project/main/res/layout/activity_main.xml
+
 > Final-Year-Project/main/res/layout/createtrip.xml
+
 > Final-Year-Project/main/res/layout/register.xml
+
 > Final-Year-Project/main/res/layout/registerwg.xml
+
 > Final-Year-Project/main/res/layout/selectdays.xml
+
 > Final-Year-Project/main/res/layout/wandererlogin.xml
+
 > Final-Year-Project/main/res/layout/wandererprofile.xml
+
 > Final-Year-Project/main/res/drawable : contains the clickable icons for app navigation
 
 3) API CALL
