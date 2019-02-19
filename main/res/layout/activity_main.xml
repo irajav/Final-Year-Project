@@ -1,80 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:paddingLeft="20dp"
-    android:paddingRight="20dp"
-    android:paddingBottom="20dp"
-    android:weightSum="1"
-    android:orientation="vertical"
-    tools:context=".MainActivity">
-
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:background="@drawable/map"
+tools:context="com.example.barang.wanderlust.MainActivity">
 
     <TextView
-        android:id="@+id/intro_title"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="WANDERLUST"
-        android:fontFamily="cursive"
-        android:paddingTop="50dp"
-        android:paddingBottom="50dp"
-        android:paddingRight="50dp"
-        android:paddingLeft="50dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="20dp"
-        android:textSize="35dp"
-        android:textAlignment="center"
-        android:layout_gravity="center"/>
-
-<LinearLayout
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:orientation="horizontal">
+        android:fontFamily="cursive"
+        android:text="Wanderlust"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="50sp"
+        android:typeface="serif"
+        android:paddingTop="100dp"/>
 
-        <Button
-            android:id="@+id/wandererBtn"
-            style="@style/Widget.AppCompat.Button.Colored"
-            android:layout_width="180dp"
-            android:layout_height="wrap_content"
-            android:text="Wanderer"
-            android:textStyle="bold" />
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
 
-        <Button
-            android:id="@+id/wanderGuideBtn"
-            style="@style/Widget.AppCompat.Button.Colored"
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp">
+
+        <EditText
+            android:id="@+id/emailinput"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="wanderguide"
-            android:textStyle="bold" />
-    </LinearLayout>
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-light"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="17sp" />
 
-------->
+        <EditText
+            android:id="@+id/passwordinput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/emailinput"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="@color/colorWhite"
+            android:fontFamily="sans-serif-light"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@color/colorWhite"
+            android:textColorHint="@color/colorWhite"
+            android:textSize="17sp" />
+    </RelativeLayout>
 
-    <TextView
-        android:id="@+id/registerNow"
+    <Button
+        android:id="@+id/btSignIn"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="140dp"
-        android:clickable="true"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Register as a WANDERER!"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:layout_above="@id/btSignUp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_white"
+        android:text="Sign In"
+        android:textColor="@color/colorPrimary" />
 
-    <TextView
-        android:id="@+id/registerNowWG"
+    <Button
+        android:id="@+id/btSignUp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:layout_marginLeft="60dp"
-        android:clickable="true"
-        android:fontFamily="sans-serif-smallcaps"
-        android:text="Register as a WANDERGUIDE!"
-        android:textSize="20sp"
-        android:textStyle="bold" />
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/button_red"
+        android:text="Sign Up"
+        android:textColor="@color/colorWhite" />
+</RelativeLayout>
 
-
-</LinearLayout>
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Hotel"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="50dp"
+            android:textSize="20sp"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/hotel_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView"
+        android:orientation="horizontal">
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="BnB"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="50dp"
+            android:textSize="20sp"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/bnb_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView2"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Resort"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="50dp"
+            android:textSize="20sp"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/resort_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView3"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Hostel"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="50dp"
+            android:textSize="20sp"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/hostel_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView4"
+        android:orientation="horizontal">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Motel"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:paddingLeft="50dp"
+            android:textSize="20sp"
+            android:paddingTop="20dp"/>
+
+        <TextView
+            android:id="@+id/motel_see_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="See All"
+            android:clickable="true"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recyclerView5"
+        android:orientation="horizontal">
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
